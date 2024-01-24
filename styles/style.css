@@ -61,9 +61,18 @@ a {
 #input input::placeholder{
   color: #000;
 }
+
+#btn__wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
 #input button {
   height: 50px;
-  font-size: 20px;
+  width: 150px;
+  font-size: 15px;
   border-radius: 20px;
   border-radius: 5px;
   border: 2px solid transparent;
@@ -83,7 +92,7 @@ a {
   font-weight: 800;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -92,4 +101,9 @@ a {
   #output {
     margin: 20px auto;
   }
+  #btn__wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 }

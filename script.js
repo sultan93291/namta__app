@@ -1,6 +1,7 @@
 let input = document.querySelector("#number");
 let btn = document.querySelector("#btn");
 let output = document.querySelector("#output");
+let reload = document.querySelector("#reload");
 
 btn.addEventListener("click", () => {
   if (input.value == "") {
@@ -10,9 +11,13 @@ btn.addEventListener("click", () => {
       output.innerHTML += `<p> ${input.value}  X  ${i} =  ${
         input.value * i
       }<p>`;
-      setTimeout(() => {
-        location.reload();
-      }, 30000);
     }
+    setTimeout(() => {
+      location.reload();
+    }, 60000);
   }
+});
+
+reload.addEventListener("click", () => {
+  location.reload();
 });
