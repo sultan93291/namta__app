@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#bg {
+  background: url(../images/math.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  max-width: 1920px;
+  height: 100vh;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  height: auto;
+  max-width: 800px;
+  margin: 200px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  padding: 0 50px;
+}
+#input {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  margin: 30px 0;
+}
+#input input {
+  height: 50px;
+  width: auto;
+  padding: 0 30px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #000;
+}
+#input input::placeholder{
+  color: #000;
+}
+#input button {
+  height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  background-color: tomato;
+  cursor: pointer;
+}
+#output {
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  font-size: 25px;
+  color: #000;
+  font-weight: 800;
+}
+
+@media (max-width: 400px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  #output {
+    margin: 20px auto;
+  }
+}
